@@ -1,0 +1,152 @@
+<html>
+    <head>
+         <title>Clothesline control</title> 
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="data:,"> 
+        <style>
+            body{
+                font-family: Arial, sans-serif;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 80vh;
+                margin: 0;
+            }
+            .display{
+                position: relative;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 1px;
+                margin-bottom: 5px;
+                
+            }
+            .display_servo{
+                background-color: #66ccff;
+                color: black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 50px;
+                border: 1px solid #000;
+                font-weight: bold;
+            }
+            .display_stpmotor{
+                background-color: #66ccff;
+                color: black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 50px;
+                border: 1px solid #000;
+                font-weight: bold;
+            }
+            .display_temperatures{
+                background-color: #66ccff;
+                color: black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 50px;
+                border: 1px solid #000;
+                font-weight: bold;
+            }
+            .display_humidity{
+                position: relative;
+                right: -40px;
+                background-color: #66ccff;
+                color: black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 50px;
+                border: 1px solid #000;
+                font-weight: bold;
+            }
+            .display_light{
+                position: relative;
+                right: -40px;
+                 background-color: #66ccff;
+                color: black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 50px;
+                border: 1px solid #000;
+                font-weight: bold;
+            }
+            
+            .button{
+                display: flex;
+                justify-content: center;
+                gap: 5px;
+            }
+            .button-group{
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+            }
+            .btn_sv1{
+                background-color: #66ff66;
+                border: none;
+                border-radius: 15px;
+                color: black;
+                width: 80px;
+                height: 40px;
+                font-weight: bold;
+            }
+            .btn_sv2{
+                background-color: #66ff66;
+                border: none;
+                border-radius: 15px;
+                color: black;
+                width: 80px;
+                height: 40px;
+                cursor: pointer;
+                font-weight: bold;
+            }
+            .stp_1{
+                background-color: chocolate;
+                border: none;
+                border-radius: 15px;
+                color: black;
+                width: 80px;
+                height: 40px;
+                cursor: pointer;
+                font-weight: bold;
+            }
+            .stp_2{
+                background-color: chocolate;
+                border: none;
+                border-radius: 15px;
+                color: black;
+                width: 80px;
+                height: 40px;
+                cursor: pointer;
+                font-weight: bold;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="display">
+            <strong class="display_servo">Servo:0°</strong>
+            <strong class="display_stpmotor">OFF</strong>
+            <strong class="display_temperatures">50%</strong>
+            <strong class="display_humidity">30°</strong>
+            <strong class="display_light">Light:50%</strong>
+            
+
+        </div>
+        <div class="button">
+            <div class="button-group">
+                <a href="/?servo=on"><button class="btn_sv1">0°</button></a>
+                <a href="/?servo=off"><button class="btn_sv2">180°</button></a>
+            </div>
+            <div class="button-group">
+                <a href="/?stp=on"><button class="stp_1">ON</button></a>
+                <a href="/?stp=off"><button class="stp_2">OFF</button></a>
+            </div>
+        </div>
+    </body>
+</html>
